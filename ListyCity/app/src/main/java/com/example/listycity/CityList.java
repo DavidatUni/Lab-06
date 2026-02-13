@@ -36,12 +36,10 @@ public class CityList {
 
     /**
      * This returns whether a city is in the list
-     * and then deletes it
      * @param city
-     * City to be searched for and deleted
+     * City to be searched for
      * @return
      * Return True or False if city is in list or not
-     * otherwise errors
      */
     public boolean hasCity(City city) {
         List<City> list = cities;
@@ -59,7 +57,7 @@ public class CityList {
     /**
      * Deletes a city from the list
      * @param city
-     * City to be deleted
+     * City to be deleted if it doesn't exist errors
      */
     public void deleteCity(City city) {
         List<City> list = cities;
@@ -80,6 +78,5 @@ public class CityList {
         List<City> list = cities;
         return list.size();
     }
-
 }
 
